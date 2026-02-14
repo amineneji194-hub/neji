@@ -57,11 +57,12 @@ A fully functional, professional website for "El Haj'Aime", a premium barbershop
    NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
    NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
    SUPABASE_SERVICE_ROLE_KEY=your_supabase_service_role_key
+   NEXT_PUBLIC_APP_URL=http://localhost:3000
+   NEXT_PUBLIC_ADMIN_PASSWORD=hajadmin2026
    RESEND_API_KEY=your_resend_api_key (optional, for emails)
    NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=your_google_maps_api_key (optional)
    NEXT_PUBLIC_GA_ID=your_google_analytics_id (optional)
    NEXT_PUBLIC_HOTJAR_ID=your_hotjar_id (optional)
-   NEXT_PUBLIC_APP_URL=http://localhost:3000
    ```
 
 5. **Run the development server**
@@ -116,7 +117,8 @@ The app can be deployed to any platform that supports Next.js:
 ## Admin Access
 
 - **URL**: `/admin`
-- **Password**: `hajadmin2026`
+- **Password**: Set via `NEXT_PUBLIC_ADMIN_PASSWORD` environment variable (defaults to `hajadmin2026` if not set)
+- **⚠️ Security Note**: Change the admin password in production by setting `NEXT_PUBLIC_ADMIN_PASSWORD` in your Vercel environment variables
 
 ## Project Structure
 

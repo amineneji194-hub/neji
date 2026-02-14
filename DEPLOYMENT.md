@@ -39,12 +39,12 @@ In Vercel project settings, add these environment variables:
 NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
 SUPABASE_SERVICE_ROLE_KEY=your_supabase_service_role_key
+NEXT_PUBLIC_APP_URL=https://your-domain.com
+NEXT_PUBLIC_ADMIN_PASSWORD=hajadmin2026
 RESEND_API_KEY=your_resend_api_key
 NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=your_google_maps_api_key
 NEXT_PUBLIC_GA_ID=your_google_analytics_id
 NEXT_PUBLIC_HOTJAR_ID=your_hotjar_id
-NEXT_PUBLIC_APP_URL=https://your-domain.com
-ADMIN_PASSWORD=hajadmin2026
 ```
 
 ### Step 5: Deploy

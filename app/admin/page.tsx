@@ -32,7 +32,8 @@ export default function AdminPage() {
   }, []);
 
   const handleLogin = () => {
-    if (password === "hajadmin2026") {
+    const adminPassword = process.env.NEXT_PUBLIC_ADMIN_PASSWORD || "hajadmin2026";
+    if (password === adminPassword) {
       setIsAuthenticated(true);
       sessionStorage.setItem("admin_authenticated", "true");
       loadBookings();
